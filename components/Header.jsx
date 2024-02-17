@@ -41,7 +41,8 @@ const Header = () => {
           </Link>
 
           {/* nav */}
-          <Nav containerStyles='hidden xl:flex' />
+          <Nav containerStyles='hidden xl:flex gap-x-12 text-white'
+          linkStyles='capitalize' />
 
           {/* btn */}
           <ScrollLink to='reservation' smooth={true}>
@@ -49,7 +50,11 @@ const Header = () => {
           </ScrollLink>
 
           {/* mobileNav */}
-          <NavMobile />
+          <NavMobile 
+            containerStyles='xl:hidden' 
+            iconStyles='text-3xl' 
+            linkStyles='uppercase' 
+          />
 
         </div>
       </div>
