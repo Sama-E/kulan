@@ -41,7 +41,7 @@ const Header = () => {
           </Link>
 
           {/* nav */}
-          <Nav />
+          <Nav containerStyles='hidden xl:flex' />
 
           {/* btn */}
           <ScrollLink to='reservation' smooth={true}>
