@@ -41,21 +41,38 @@ const Hero = () => {
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nam qui dolores aut adipisci aperiam quidem voluptas nihil fuga vitae et eveniet, quaerat quam necessitatibus sapiente voluptatibus, tenetur laboriosam illum?
             </motion.p>
-            <motion.div>
+            <motion.div
+              variants={fadeIn('down', 0.8)}
+              initial='hidden'
+              whileInView={'show'}
+              viewport={{once:false, amount:0.4}}
+            >
               <Button>Let's eat</Button>
             </motion.div>
 
           </div>
           {/* img */}
-          <div className="hidden xl:flex xl:absolute xl:top-20-[200px] xl:right-0">
+          <motion.div 
+            variants={fadeIn('up', 0.8)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once:false, amount:0.1}}
+            className="hidden xl:flex xl:absolute xl:top-20-[200px] xl:right-0"
+          >
             <Image src="/hero/plate.png" width={756} height={682} alt="" />
-          </div>
+          </motion.div>
         </div>
       </div>
       {/* coffee img */}
-      <div className="hidden xl:flex xl:relative xl:-top-36">
+      <motion.div 
+        variants={fadeIn('up', 1.2)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once:false, amount:0.1}}
+        className="hidden xl:flex xl:relative xl:-top-36"
+      >
         <Image src="/hero/coffee.png" width={386} height={404} alt="" />
-      </div>
+      </motion.div>
     </section>
   )
 }
