@@ -45,7 +45,7 @@ const NavMobile = ({containerStyles, iconStyles, linkStyles}) => {
     <div className={`${containerStyles}`}>
       {/* nav trigger btn */}
       <div className='cursor-pointer outline-none' onClick={() => setIsOpen(!isOpen)}>
-        <RiMenu2Line className='text-3xl text-white transition-all duration-200' />
+        <RiMenu2Line className='text-3xl text-white transition-all duration-200 ' />
       </div>
       <aside className={`${isOpen ? 'right-0':'-right-full'} bg-black fixed z-20 w-full p-10 top-0 bottom-0 transition-all duration-500`}>
         <div className='flex flex-col items-center justify-between h-full'>

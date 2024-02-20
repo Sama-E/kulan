@@ -1,10 +1,10 @@
 import About from "@/components/About";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Map from "@/components/Map";
 import Menu from "@/components/Menu";
 import Reservation from "@/components/Reservation";
 import StyleGuide from "@/components/StyleGuide";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       <Menu />
       <Reservation />
       <About />
+      <Map />
       <div className="h-[4000px]">
 
       </div>
