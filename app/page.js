@@ -18,9 +18,8 @@ export default function Home() {
       <About />
       <Map />
       <Footer />
-      <div className="h-[4000px]">
-
-      </div>
+      {/* <div className="h-[4000px]">
+      </div> */}
     </main>
   );
 }
